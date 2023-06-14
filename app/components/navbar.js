@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 export const Navbar = (params) => {
-  // console.log(Object.values(params));
   return (
     <div className="flex justify-around p-5 items-space bg-slate-400">
       <p>Logo</p>

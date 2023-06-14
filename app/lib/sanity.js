@@ -19,15 +19,15 @@ export async function getAllData() {
   }`);
 }
 
-export async function getServerSideProps() {
-  const data = await getAllData();
+// export async function getServerSideProps() {
+//   const data = await getAllData();
 
-  return {
-    props: {
-      data,
-    },
-  };
-}
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// }
 
 export async function getData(slug) {
   return client.fetch(

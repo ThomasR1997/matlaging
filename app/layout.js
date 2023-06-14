@@ -5,7 +5,6 @@ import { Inter } from "next/font/google";
 import { getAllData } from "./lib/sanity";
 
 const data = await getAllData();
-//console.log(data);
 
 const inter = Inter({ subsets: ["latin"] });
 

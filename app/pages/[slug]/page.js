@@ -3,7 +3,6 @@ import Image from "next/image";
 
 export default async function Page({ params }) {
   const data = await getData(params.slug);
-  console.log(Object.values(data));
 
   return (
     <div>
