@@ -10,8 +10,8 @@ export default async function Page({ params }) {
       <h2>Ingredienser:</h2>
       <ul>
         {Object.values(data.ingredients)?.map((item) => {
-          return item.children.map((item) => {
-            return <li>{item.text}</li>;
+          return item.children.map((item, index) => {
+            return <li key={index}>{item.text}</li>;
           });
         })}
       </ul>
